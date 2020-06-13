@@ -1,23 +1,30 @@
+#ifndef _SORT_H
+#define _SORT_H
+
+/* Standard Libraries */
+
 #include <stdio.h>
-#include "sort.h"
+#include <stdlib.h>
+#include <string.h>
+
+/* Data Type Structures */
 
 /**
- * print_list - Prints a list of integers
+ * struct listint_s - Doubly linked list node
  *
- * @list: The list to be printed
+ * @n: Integer stored in the node
+ * @prev: Pointer to the previous element of the list
+ * @next: Pointer to the next element of the list
  */
-void print_list(const listint_t *list)
+typedef struct listint_s
 {
-	int i;
+	const int n;
+	struct listint_s *prev;
+	struct listint_s *next;
+} listint_t;
 
-	i = 0;
-	while (list)
-	{
-		if (i > 0)
-			printf(", ");
-		printf("%d", list->n);
-		++i;
-		list = list->next;
-	}
-	printf("\n");
-}
+/* Prototypes */
+
+void bubble_sort(int *array, size_t size);
+
+#endif
