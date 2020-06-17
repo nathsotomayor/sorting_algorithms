@@ -14,6 +14,7 @@
 int lomuto_partition(int *array, int first, int last, size_t size)
 {
 	int piv_idx, pivot, index, var_swap;
+
 	piv_idx = first;
 	pivot = array[last];
 
