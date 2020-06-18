@@ -50,6 +50,9 @@ In this files are the big O notations of the time complexity of the each sorting
 |`3-O`                          |Big O notations of the time complexity of the **Quick Sort Algorithm**|
 
 
+## Resources
+[Big-O Cheat Sheet](https://www.bigocheatsheet.com/)
+
 ## Authors
 
 Javier Charria - [GitHub](https://github.com/linkjavier) | [Twitter](https://twitter.com/linkjavier)
